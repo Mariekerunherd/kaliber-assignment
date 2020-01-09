@@ -1,0 +1,67 @@
+.hamburger-container {
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0px;
+    animation: 0.5s ease-out 0s 1 menuTransition;
+}
+
+.hamburger-title {
+    font-weight: bold;
+    font-size: 17px;
+    color: rgb(49, 66, 84);
+    text-transform: uppercase;
+    margin: auto 0 auto 40px;
+}
+
+.hamburger-button {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(49, 66, 84);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 70px;
+    transition: background-color 0.5s ease;
+}
+
+.stripe {
+    width: 60%;
+    height: 2px;
+    margin: 2px auto;
+    background-color: white;
+}
+
+.hamburger-button:hover .stripe{
+    background-color: rgb(49, 66, 84);
+}
+
+.hamburger-button:hover {
+    background-color: white;;
+}
+
+.hamburger-button:active .stripe:nth-child(1){
+    -webkit-transform: rotate(45deg);
+}
+
+.hamburger-button:active .stripe:nth-child(2){
+    margin-left: 2px;
+}
+
+.hamburger-button:active .stripe:nth-child(3){
+    -webkit-transform: rotate(-45deg);
+}
+
+.hamburger-button:active .stripe {
+    background-color: rgb(49, 66, 84);
+}
+
+.hamburger-button:active {
+    background-color: white;;
+}
+

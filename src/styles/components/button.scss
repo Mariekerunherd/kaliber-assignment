@@ -1,0 +1,14 @@
+.button {
+    font-weight: bold;
+    font-size: 10px;
+    margin: 0 18px;
+    padding-bottom: 2px;
+    color: white;
+    text-transform: uppercase;
+    border-bottom: 2px solid n(56, 56, 56, 1);
+}
+
+.button:hover {
+    border-bottom: 2px solid white;
+    cursor: pointer;
+}
